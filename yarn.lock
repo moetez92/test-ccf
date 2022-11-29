@@ -2237,7 +2237,7 @@ __metadata:
     "@typescript-eslint/parser": ^4.24.0
     apexcharts: ^3.26.3
     axios: ^0.21.1
-    concurrently: ^6.2.1
+    concurrently: ^7.6.0
     dotenv: ^10.0.0
     eslint: ^7.26.0
     eslint-config-prettier: ^8.3.0
@@ -2399,7 +2399,7 @@ __metadata:
   resolution: "@cloud-carbon-footprint/integration-tests@workspace:packages/integration-tests"
   dependencies:
     "@testing-library/testcafe": ^4.4.0
-    concurrently: ^6.2.1
+    concurrently: ^7.6.0
     eslint: ^7.26.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.0
@@ -6591,6 +6591,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ansi-regex@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "ansi-regex@npm:5.0.1"
+  checksum: c944e1229f022a2071f7477ea425964328c577d2c752083fe564ea0513b6d733c9ec65102f6d4d2b54cba0cb2dc969648b60d567abeff13dc95ecc0b9b97737d
+  languageName: node
+  linkType: hard
+
 "ansi-styles@npm:^2.2.1":
   version: 2.2.1
   resolution: "ansi-styles@npm:2.2.1"
@@ -8611,6 +8618,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cliui@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "cliui@npm:8.0.1"
+  dependencies:
+    string-width: ^4.2.0
+    strip-ansi: ^6.0.1
+    wrap-ansi: ^7.0.0
+  checksum: 45cab52b0553cfd3ff675188827cf7ceb14e6349dbc3a506a476bd65f07fd69f911d5c35592ee02b4140d09ff942960fc6629a2eb6f7532ebb2b703acacb397c
+  languageName: node
+  linkType: hard
+
 "clone-deep@npm:^4.0.1":
   version: 4.0.1
   resolution: "clone-deep@npm:4.0.1"
@@ -8948,22 +8966,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "concurrently@npm:6.2.1"
+"concurrently@npm:^7.6.0":
+  version: 7.6.0
+  resolution: "concurrently@npm:7.6.0"
   dependencies:
     chalk: ^4.1.0
-    date-fns: ^2.16.1
+    date-fns: ^2.29.1
     lodash: ^4.17.21
-    read-pkg: ^5.2.0
-    rxjs: ^6.6.3
+    rxjs: ^7.0.0
+    shell-quote: ^1.7.3
     spawn-command: ^0.0.2-1
     supports-color: ^8.1.0
     tree-kill: ^1.2.2
-    yargs: ^16.2.0
+    yargs: ^17.3.1
   bin:
-    concurrently: bin/concurrently.js
-  checksum: 673bf80f5acf136c0fb7725df362d4b03486204ca6d1898b69226cb60b6b1a7061c05db567d883860080162a2e0053fb133079f4ae8bf31c3ecad0818323e947
+    conc: dist/bin/concurrently.js
+    concurrently: dist/bin/concurrently.js
+  checksum: 9578d2c7085dcc20f27fce667b1c601bb060f26e1b200230156fc7372548301f15b4823f8ceb786df495b1d3b53ee9e7ad5960a6fc4e292c6b5e52fe440a3fde
   languageName: node
   linkType: hard
 
@@ -9915,10 +9934,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:^2.16.1":
-  version: 2.21.3
-  resolution: "date-fns@npm:2.21.3"
-  checksum: a88c9da180cde3a3426c09cacf3f6bffb615e31d73e458da90e9d5304432eea2e0b360f40ee4fd5ca187659e8a7f8f667db902a3eb033e8d2d1522b1cc1b9e32
+"date-fns@npm:^2.29.1":
+  version: 2.29.3
+  resolution: "date-fns@npm:2.29.3"
+  checksum: ddb5d58fcdad88aadcc8695205137036a76642cea21345ab4f6cb3c35a485af8bfb4b0759ec679d0b5e49f20f71a670c3f3aec8ee8d29e89277665cc58da2bd7
   languageName: node
   linkType: hard
 
@@ -21652,7 +21671,7 @@ resolve@^2.0.0-next.3:
   dependencies:
     "@changesets/cli": ^2.17.0
     "@types/fs-extra": ^9.0.12
-    concurrently: ^6.2.1
+    concurrently: ^7.6.0
     fs-extra: ^10.0.0
     husky: ^7.0.2
     lerna: ^4.0.0
@@ -21702,12 +21721,21 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^6.4.0, rxjs@npm:^6.6.0, rxjs@npm:^6.6.3, rxjs@npm:^6.6.6, rxjs@npm:^6.6.7":
+"rxjs@npm:^6.4.0, rxjs@npm:^6.6.0, rxjs@npm:^6.6.6, rxjs@npm:^6.6.7":
   version: 6.6.7
   resolution: "rxjs@npm:6.6.7"
   dependencies:
     tslib: ^1.9.0
   checksum: 1146975cbd5388ee5e61450235dc5670931e43cce71813f567977d334acc4d75c6e8d9d293df67e1fb31510b99fc8957943d4a9b550d109e4dc69967a8471543
+  languageName: node
+  linkType: hard
+
+"rxjs@npm:^7.0.0":
+  version: 7.5.7
+  resolution: "rxjs@npm:7.5.7"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: f871a671a56ac4093ed916df96ea54ccc159f5bfcf16b9481aba0c16c583cf775d2350ac60262c654cb66b7e747d774eb04700f32f6ce01b6ee7a34d0393bc68
   languageName: node
   linkType: hard
 
@@ -22148,6 +22176,13 @@ resolve@^2.0.0-next.3:
   version: 1.7.2
   resolution: "shell-quote@npm:1.7.2"
   checksum: 3b3d06814ca464cde8594c27bdd57a1f4c06b26ad2988b08b5819f97ac1edfd7cb7313fda1c909da33211972c72c5a7906b7da2b62078109f9d3274d3f404fa9
+  languageName: node
+  linkType: hard
+
+"shell-quote@npm:^1.7.3":
+  version: 1.7.4
+  resolution: "shell-quote@npm:1.7.4"
+  checksum: 4a03530c1f403c0fb89fa3570ac2f9d06747f0b601558235e9a80a609973746911fe094ae3c2f21a5a9dc2d6159f71db52e334aabbd892fb7da6540d2494b24c
   languageName: node
   linkType: hard
 
@@ -22886,6 +22921,17 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+"string-width@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "string-width@npm:4.2.3"
+  dependencies:
+    emoji-regex: ^8.0.0
+    is-fullwidth-code-point: ^3.0.0
+    strip-ansi: ^6.0.1
+  checksum: 748c97988904505fc6af52ccdf6f354445c714c38d067f22e0cdc6a3ad3d9c5ea29582ef9a6277dc7a813775bb48390ea064b488913239d58601b6d1fcb725b4
+  languageName: node
+  linkType: hard
+
 "string.prototype.matchall@npm:^4.0.4":
   version: 4.0.4
   resolution: "string.prototype.matchall@npm:4.0.4"
@@ -22983,6 +23029,15 @@ resolve@^2.0.0-next.3:
   dependencies:
     ansi-regex: ^4.1.0
   checksum: 44a0d0d354f5f7b15f83323879a9112ea746daae7bef0b68238a27626ee757d9a04ce6590433841e14b325e8e7c5d62b8442885e50497e21b7cbca6da40d54ea
+  languageName: node
+  linkType: hard
+
+"strip-ansi@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "strip-ansi@npm:6.0.1"
+  dependencies:
+    ansi-regex: ^5.0.1
+  checksum: 9d3061240b03abe5beaf403893464fdc924f43664debe822d5e9146b56c1398b88003f8afdb97eb0cea955c568f6bbfa4923d2b2a08a3a079fd09ee3b5402efb
   languageName: node
   linkType: hard
 
@@ -24237,6 +24292,13 @@ resolve@^2.0.0-next.3:
   version: 2.2.0
   resolution: "tslib@npm:2.2.0"
   checksum: 2d35468c470410871c5246e43f12dcb6d0fc363b617c176f26443b9530e5c5ee8448966892a42956168d8f495da7865bda33dfe82c26c91991e28999974a618f
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.1.0":
+  version: 2.4.1
+  resolution: "tslib@npm:2.4.1"
+  checksum: ca5110f8b83ec98f17b39f88e96425bb028a46d5963607143a1dd89637a68c5b2866908f9ecd75e9e33f3c06a19fea1049394c5d5840ebc2ff7ec6f55b7556ca
   languageName: node
   linkType: hard
 
@@ -25892,6 +25954,13 @@ typescript@^4.3.5:
   languageName: node
   linkType: hard
 
+"yargs-parser@npm:^21.1.1":
+  version: 21.1.1
+  resolution: "yargs-parser@npm:21.1.1"
+  checksum: 192567f8d6f449f608f780f60b77337d2afaa24f9d6546129ad4e7bdcd9bccabb7ab1ba7754d9c9ddfdd0c6de11e5ed8393945c3a98c0804c463dfa8d026ea95
+  languageName: node
+  linkType: hard
+
 "yargs@npm:^13.3.2":
   version: 13.3.2
   resolution: "yargs@npm:13.3.2"
@@ -25941,6 +26010,21 @@ typescript@^4.3.5:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: a79ce1f043021cd645de1ffebb6149541d382ba68f4a6b5eca5d2ad65af51893371bbd78e240dc3b6cf0cbb419511ba5bda715dec992e4266e6863ea49f14feb
+  languageName: node
+  linkType: hard
+
+"yargs@npm:^17.3.1":
+  version: 17.6.2
+  resolution: "yargs@npm:17.6.2"
+  dependencies:
+    cliui: ^8.0.1
+    escalade: ^3.1.1
+    get-caller-file: ^2.0.5
+    require-directory: ^2.1.1
+    string-width: ^4.2.3
+    y18n: ^5.0.5
+    yargs-parser: ^21.1.1
+  checksum: 6be767b260bbdec87fe6dca8199ea00fbcb6427d654453c4df612423fb7287aa4984544a099bb54c5fc7d1f71b17dd2fde86c2bcb9e9ac2ed3d54e7a735e850c
   languageName: node
   linkType: hard
 
