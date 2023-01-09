@@ -2189,7 +2189,7 @@ __metadata:
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.0
     eslint-plugin-unused-imports: ^1.1.1
-    fs-extra: ^10.0.0
+    fs-extra: ^11.1.0
     jest: 26.6.0
     jest-when: ^3.3.1
     lint-staged: ^11.0.1
@@ -2331,7 +2331,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@cloud-carbon-footprint/create-app@workspace:packages/create-app"
   dependencies:
-    "@types/fs-extra": ^9.0.12
+    "@types/fs-extra": ^11.0.0
     "@types/inquirer": ^7.3.1
     "@types/recursive-readdir": ^2.2.0
     "@typescript-eslint/eslint-plugin": ^4.26.1
@@ -2342,7 +2342,7 @@ __metadata:
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^3.4.0
     eslint-plugin-unused-imports: ^1.1.1
-    fs-extra: ^10.0.0
+    fs-extra: ^11.1.0
     handlebars: ^4.7.7
     inquirer: ^8.0.0
     lint-staged: ^11.0.1
@@ -4977,12 +4977,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/fs-extra@npm:^9.0.12":
-  version: 9.0.12
-  resolution: "@types/fs-extra@npm:9.0.12"
+"@types/fs-extra@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@types/fs-extra@npm:11.0.0"
   dependencies:
+    "@types/jsonfile": "*"
     "@types/node": "*"
-  checksum: bb3cd95b9748301127e35a64cde9621d4bb7cd6edb1f1155a00e07eeafd92740e2cacca6f9e3e26ec7bedd76cafa8d9a6b3751478311b4294bb4127768489f47
+  checksum: 1d0f3c645f8f8b5bd1c2e9a7d7a18119c611947e1e06f7de7f6c5abef08686451180e04bc1117bbbabf2e649246d188661bd6596b36d2d8bc8022e11a0c65d18
   languageName: node
   linkType: hard
 
@@ -5114,6 +5115,15 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: 66e9ac0143ec521522c7bb670301e9836ee886207eeed1aab6d4854a1b19b404ab3a54cd8d449f9b1f13acc357f540be96f8ac2d1e86e301eab52ae0f9a4066f
+  languageName: node
+  linkType: hard
+
+"@types/jsonfile@npm:*":
+  version: 6.1.1
+  resolution: "@types/jsonfile@npm:6.1.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 0381603b27dca99600af54b2a5c5836ed8667a340aac1ca2bcfc773ac5465bb1a2369ab831a058ce76998802df750c55458cef71f283153414081b016b8ab1ad
   languageName: node
   linkType: hard
 
@@ -12337,14 +12347,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "fs-extra@npm:10.0.0"
+"fs-extra@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "fs-extra@npm:11.1.0"
   dependencies:
     graceful-fs: ^4.2.0
     jsonfile: ^6.0.1
     universalify: ^2.0.0
-  checksum: 84632d143fe3125b8c3c2b1fedbbdfcfb84fc3e087522b4e138cc07edf574619925713a6609f6d5e53ede2e31ab319c7d528ea4a4a770ba6622a16bf4447cd8b
+  checksum: 873b1532fe1a7a3e916936c3206da3d280e840b2d1bf0fe5050b4916c627371a8de228d41ab2a70e0a6fbd0919c55da5db9192338be829320c8f0aaa445dd7b8
   languageName: node
   linkType: hard
 
@@ -21651,9 +21661,9 @@ resolve@^2.0.0-next.3:
   resolution: "root@workspace:."
   dependencies:
     "@changesets/cli": ^2.17.0
-    "@types/fs-extra": ^9.0.12
+    "@types/fs-extra": ^11.0.0
     concurrently: ^6.2.1
-    fs-extra: ^10.0.0
+    fs-extra: ^11.1.0
     husky: ^7.0.2
     lerna: ^4.0.0
     rimraf: ^3.0.2
